@@ -1,0 +1,17 @@
+# When starting a Flask app you should set the environment variable FLASK_APP, this will hold information about the initialization of you server
+
+# On Windows
+set FLASK_APP=<file.py>
+
+# Mac or Linux
+export FLASK_APP=<file.py>
+
+
+
+# The variable FLASK_DEBUG is used to update your flask application everytime you make a change and refresh the page
+
+# On Windows
+set FLASK_DEBUD=1
+
+# Mac or Linux
+export FLASK_DEBUD=1

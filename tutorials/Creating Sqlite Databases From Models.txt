@@ -1,0 +1,16 @@
+Creating Databases from models in your application:
+
+	- After creating the model classes go to your 'app.py' directory
+	- Open the python terminal and do the following:
+
+	-> from yourapp import database
+	-> database.create_all() # This will create the database file specified in your app.config['SQLALCHEMY_DATABASE_URI']
+
+	-> database.session.add(object_created_from_model) # This will not create the object in database yet. It'll just add to the session (Prepare the object)
+	-> database.session.commit() # This will commit/create in the database all objects added to the session
+
+(IF YOU'RE ON WINDOWS, USING ANACONDA AND HAVE DLL ERRORS: Just download the DLL for your system on https://www.sqlite.org/download.html and put in the Anaconda DLL directory, example -> C:\Users\YOURUSER\Anaconda3\DLLs)
+
+
+To delete your tables you just need to run:
+	-> db.drop_all()

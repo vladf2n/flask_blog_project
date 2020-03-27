@@ -1,0 +1,33 @@
+# Create a new Virtual Environment
+	-> python -m venv <name_of_virtual_env>
+
+# Create a new Virtual Environment using all packages from your system
+	-> python -m venv <name_of_virtual_env> --system-site-packages
+
+# Crate a new Virtual Environment INSIDE a project
+	-> mkdir <project_name>
+	-> python -m venv <project_name>\<name_of_virtual_env>
+
+
+# Activate the Virtual Environment
+	-> <name_of_virtual_env>\Scripts\activate.bat
+
+# Activate the Virtual Environment INSIDE a project
+	-> <project_name>\<name_of_virtual_env>\Scripts\activate.bat
+
+
+# Install any lib
+	-> pip install <name_of_lib>
+
+# Creating a requirements file to create other environments
+	-> pip freeze
+	then copy every lib and paste them on a text file named requirements.txt
+
+# Running the requirements file
+	-> pip install -r requirements.txt
+
+# Deactivate the Virtual Environment
+	-> deactivate
+
+# Removing the Virtual Environment
+	-> rmdir <name_of_virtual_env> /s
