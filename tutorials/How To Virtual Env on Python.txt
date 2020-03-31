@@ -9,11 +9,14 @@
 	-> python -m venv <project_name>\<name_of_virtual_env>
 
 
-# Activate the Virtual Environment
+# Activate the Virtual Environment on Windows
 	-> <name_of_virtual_env>\Scripts\activate.bat
 
 # Activate the Virtual Environment INSIDE a project
 	-> <project_name>\<name_of_virtual_env>\Scripts\activate.bat
+
+# Activate the Virtual Environment on Mac
+	-> source <name_of_virtual_env>/bin/activate
 
 
 # Install any lib

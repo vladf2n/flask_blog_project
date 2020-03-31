@@ -1,3 +1,4 @@
 /blog_project_venv/*
 /.vscode/*
 /__pycache__/*
+/flaskblog/__pycache__/*
