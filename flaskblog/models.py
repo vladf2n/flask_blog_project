@@ -1,9 +1,16 @@
 from datetime import datetime
 # flaskblog is the package containing all of my application but the run file
-from flaskblog import db
+from flaskblog import db, login_manager
+from flask_login import UserMixin
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
+
 
 # Each Class is going to be a Model in the Database
-class User(db.Model):
+class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(20), unique=True, nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
